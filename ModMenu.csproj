@@ -1,0 +1,23 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>GalacticMenu</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ModMenu.cs" />
+    <Reference Include="UnityEngine">
+      <HintPath>lib/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>lib/Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>lib/BepInEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
