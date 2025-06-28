@@ -1,4 +1,4 @@
-
+// Trigger build
 using BepInEx;
 using UnityEngine;
 using System.Collections.Generic;
@@ -93,3 +93,4 @@ public class ModMenu : BaseUnityPlugin
         public bool Enabled;
     }
 }
+Trigger GitHub Actions build
