@@ -93,4 +93,3 @@ public class ModMenu : BaseUnityPlugin
         public bool Enabled;
     }
 }
-Trigger GitHub Actions build
