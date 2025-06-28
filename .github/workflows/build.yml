@@ -1,0 +1,25 @@
+name: Build DLL
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.3.1
+
+    - name: Build with MSBuild
+      run: msbuild ModMenu.csproj /p:Configuration=Release
+
+    - name: Upload DLL
+      uses: actions/upload-artifact@v3
+      with:
+        name: GalacticMenu
+        path: bin/Release/*.dll
